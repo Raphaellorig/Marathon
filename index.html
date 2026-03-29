@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marathon Guide – Tout savoir sur le marathon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo">🏃 Marathon<span>Guide</span></div>
+    <ul class="nav-links">
+      <li><a href="#niveaux">Niveaux</a></li>
+      <li><a href="#fierte">Fierté</a></li>
+      <li><a href="#contact" class="nav-cta">Recevoir le guide</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <p class="hero-tag">42,195 km de passion</p>
+      <h1>Tout savoir sur<br><span>le Marathon</span></h1>
+      <p class="hero-sub">Du premier pas à la ligne d'arrivée — conseils, nutrition et plans d'entraînement adaptés à chaque niveau.</p>
+      <a href="#niveaux" class="btn-hero">Choisir mon niveau</a>
+    </div>
+    <div class="hero-visual">
+      <img src="images/course.png" alt="Marathon" style="width:100%; height:420px; object-fit:cover; border-radius:18px;">
+    </div>
+  </header>
+
+  <!-- ====== ACCORDÉON CULTURE ====== -->
+  <section class="accordion-section">
+    <div class="accordion-wrap">
+      <p class="accordion-label">🌍 Culture & Anecdotes</p>
+
+      <div class="accordion-item">
+        <button class="accordion-btn" onclick="toggleAccordion(this)">
+          <span>🏛️ Les origines antiques du marathon</span>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-body">
+          <p>La légende du marathon remonte à la <strong>bataille de Marathon en 490 av. J.-C.</strong>, quand les Grecs repoussèrent l'invasion perse de Darius Ier sur la plaine de Marathon. Selon Hérodote, un messager nommé <strong>Pheidippides</strong> aurait couru les ~40 km séparant Marathon d'Athènes pour annoncer la victoire, avant de s'effondrer mort d'épuisement après avoir prononcé : <em>"Nous avons vaincu !"</em>. En réalité, les historiens débattent encore de la véracité exacte de cet épisode, mais il est devenu le mythe fondateur de la course à pied moderne.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-btn" onclick="toggleAccordion(this)">
+          <span>👑 Pourquoi 42,195 km exactement ?</span>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-body">
+          <p>Aux <strong>Jeux Olympiques de Londres en 1908</strong>, les organisateurs souhaitaient que la course parte du château de Windsor pour permettre aux enfants royaux de voir le départ, et qu'elle arrive exactement sous le balcon de la <strong>reine Alexandra</strong> dans le stade olympique. La distance mesurée fut de <strong>42,195 km</strong>. Cette distance fut officiellement adoptée comme norme mondiale par l'IAAF en <strong>1921</strong> — et elle n'a plus jamais changé depuis.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-btn" onclick="toggleAccordion(this)">
+          <span>🌍 Le marathon à travers le monde</span>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-body">
+          <p>Chaque année, plus de <strong>800 marathons</strong> sont organisés dans le monde, rassemblant environ <strong>1,1 million de finishers</strong>. Les six <em>World Marathon Majors</em> — Tokyo, Boston, Londres, Berlin, Chicago et New York — sont les plus prestigieux. Le record du monde masculin est détenu par <strong>Kelvin Kiptum</strong> (Kenya) en <strong>2h00'35"</strong> à Chicago en 2023. Chez les femmes, c'est <strong>Tigst Assefa</strong> (Éthiopie) avec <strong>2h11'53"</strong> à Berlin en 2023.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-btn" onclick="toggleAccordion(this)">
+          <span>💡 Le saviez-vous ? Anecdotes insolites</span>
+          <span class="accordion-arrow">▼</span>
+        </button>
+        <div class="accordion-body">
+          <ul style="display:flex; flex-direction:column; gap:10px; padding-left:4px;">
+            <li>🐎 Au marathon de Cardiff, un homme bat régulièrement des coureurs... <strong>déguisé en cheval</strong>.</li>
+            <li>🔥 La température idéale pour courir un marathon est de <strong>8 à 12°C</strong> — en dessous et au-dessus, les temps moyens empirent significativement.</li>
+            <li>🦵 Pendant un marathon, vos pieds frappent le sol environ <strong>35 000 à 40 000 fois</strong>.</li>
+            <li>🧠 Les études montrent que la douleur ressentie au km 30 est autant <strong>mentale que physique</strong> — d'où l'importance de la préparation psychologique.</li>
+            <li>🍌 La banane est l'aliment le plus distribué lors des ravitaillements de marathon dans le monde entier.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====== SECTION NIVEAUX ====== -->
+  <section class="niveaux" id="niveaux">
+    <div class="section-header">
+      <h2>Choisissez votre niveau</h2>
+      <p>Cliquez sur votre catégorie pour accéder à votre guide complet</p>
+    </div>
+    <div class="cards-grid">
+
+      <a href="debutant.html" class="level-card debutant">
+        <div class="card-badge">Niveau 1</div>
+        <div class="card-icon">🌱</div>
+        <h3>Débutant</h3>
+        <p class="card-goal">Objectif : <strong>finir en moins de 4h30</strong></p>
+        <p class="card-desc">Vous n'avez jamais couru un marathon ? Ce guide est fait pour vous. Plan d'entraînement, nutrition, gestion de l'effort : tout est expliqué pas à pas.</p>
+        <ul class="card-topics">
+          <li>✓ Déroulement km par km</li>
+          <li>✓ Plan alimentaire avec menus détaillés</li>
+          <li>✓ Programme 16 semaines avec allures</li>
+          <li>✓ Équipements indispensables</li>
+        </ul>
+        <div class="card-cta">Accéder au guide →</div>
+      </a>
+
+      <a href="intermediaire.html" class="level-card intermediaire">
+        <div class="card-badge">Niveau 2</div>
+        <div class="card-icon">⚡</div>
+        <h3>Intermédiaire</h3>
+        <p class="card-goal">Objectif : <strong>finir entre 3h30 et 4h</strong></p>
+        <p class="card-desc">Vous avez déjà couru un marathon ou vous êtes un coureur régulier ? Passez au niveau supérieur avec un programme plus intensif et ciblé.</p>
+        <ul class="card-topics">
+          <li>✓ Travail de la vitesse (VMA)</li>
+          <li>✓ Nutrition de performance</li>
+          <li>✓ Programme 20 semaines avec allures</li>
+          <li>✓ Équipements & gels</li>
+        </ul>
+        <div class="card-cta">Accéder au guide →</div>
+      </a>
+
+      <a href="pro.html" class="level-card pro">
+        <div class="card-badge">Niveau 3</div>
+        <div class="card-icon">🏆</div>
+        <h3>Pro</h3>
+        <p class="card-goal">Objectif : <strong>moins de 3h</strong></p>
+        <p class="card-desc">Vous visez la performance maximale. Entraînement fractionné, stratégie de course au km près, nutrition élite — pour les coureurs sérieux.</p>
+        <ul class="card-topics">
+          <li>✓ Fractionné & sorties longues</li>
+          <li>✓ Nutrition élite & supplémentation</li>
+          <li>✓ Programme 24 semaines avec allures</li>
+          <li>✓ Équipements élite</li>
+        </ul>
+        <div class="card-cta">Accéder au guide →</div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ====== SECTION FIERTÉ ====== -->
+  <section class="fierte-section" id="fierte">
+    <div class="fierte-inner">
+      <div class="fierte-text">
+        <p class="section-tag">🏅 Plus qu'une course</p>
+        <h2>Finir un marathon, c'est<br><span>rejoindre le 1%</span></h2>
+        <p>Statistiquement, <strong>moins de 1% de la population mondiale</strong> a terminé un marathon. Ce n'est pas qu'un chiffre — c'est la preuve concrète que vous êtes capable de repousser vos limites bien au-delà de ce que vous imaginiez.</p>
+        <p>Un marathon n'est pas simplement une case à cocher. C'est une démonstration silencieuse de <strong>rigueur, persévérance et courage</strong> — envers vous-même d'abord, envers les autres ensuite. Chaque kilomètre parcouru à l'entraînement, chaque matin où vous avez choisi de sortir malgré la fatigue, chaque gel avalé au km 30 quand vos jambes vous suppliaient d'arrêter : tout cela a forgé quelque chose en vous.</p>
+        <p>Quand vous franchissez la ligne d'arrivée, <strong>soyez fier(e)</strong>. Vous faites partie d'un club très select.</p>
+      </div>
+      <div class="fierte-visual">
+        <img src="images/Finish.png" alt="Ligne d'arrivée" style="width:100%; border-radius:18px; object-fit:cover;">
+        <div class="fierte-stats-row">
+          <div class="fierte-stat"><span>1%</span><p>de la population mondiale</p></div>
+          <div class="fierte-stat"><span>42</span><p>km de dépassement de soi</p></div>
+          <div class="fierte-stat"><span>∞</span><p>fierté pour toute la vie</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="contact-text">
+        <h2>Recevez votre guide<br>par email 📬</h2>
+        <p>Entrez votre adresse email et recevez gratuitement le guide complet adapté à votre niveau, avec le plan d'entraînement et le calendrier alimentaire en PDF.</p>
+      </div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" placeholder="Votre prénom" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Adresse email</label>
+          <input type="email" id="email" placeholder="votre@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="niveau">Votre niveau</label>
+          <select id="niveau">
+            <option value="debutant">Débutant</option>
+            <option value="intermediaire">Intermédiaire</option>
+            <option value="pro">Pro</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-submit">Recevoir mon guide gratuit</button>
+        <p class="form-note" id="form-msg"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>🏃 MarathonGuide — Tous droits réservés 2025</p>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const prenom = document.getElementById('prenom').value;
+      const msg = document.getElementById('form-msg');
+      msg.textContent = `Merci ${prenom} ! Votre guide arrive dans votre boîte mail. 🎉`;
+      msg.style.color = '#e8f5e9';
+      e.target.reset();
+    }
+
+    function toggleAccordion(btn) {
+      const body = btn.nextElementSibling;
+      const arrow = btn.querySelector('.accordion-arrow');
+      const isOpen = body.classList.contains('open');
+      /* Fermer tous les autres */
+      document.querySelectorAll('.accordion-body.open').forEach(b => {
+        b.classList.remove('open');
+        b.previousElementSibling.querySelector('.accordion-arrow').textContent = '▼';
+      });
+      if (!isOpen) {
+        body.classList.add('open');
+        arrow.textContent = '▲';
+      }
+    }
+  </script>
+</body>
+</html>
