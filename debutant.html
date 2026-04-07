@@ -6,7 +6,7 @@
   <title>Guide Débutant – MarathonGuide</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="inner-page">
 
@@ -83,7 +83,7 @@
       </div>
 
       <!-- Zone photo parcours -->
-   <img src="Debutant.png" alt="Course" style="width:100%; height:400px; object-fit:cover; border-radius:18px; margin-top:30px;">
+   <img src="images/Debutant.png" alt="Course" style="width:100%; height:400px; object-fit:cover; border-radius:18px; margin-top:30px;">
     <!-- ====== NUTRITION ====== -->
     <section class="content-block alt-block" id="nutrition">
       <h2>🥗 Plan alimentaire — Menus détaillés semaine par semaine</h2>
@@ -146,7 +146,7 @@
       </div>
 
       <!-- Zone photo nutrition -->
-    <img src="Debutant2.png" alt="Course" style="width:100%; height:400px; object-fit:cover; border-radius:18px; margin-top:30px;">
+    <img src="images/Debutant2.png" alt="Course" style="width:100%; height:400px; object-fit:cover; border-radius:18px; margin-top:30px;">
 
     <!-- ====== ENTRAÎNEMENT ====== -->
     <section class="content-block" id="entrainement">
@@ -241,7 +241,7 @@
       <p class="table-note">💡 <em>Tapering semaines 15–16 = réduction du volume pour arriver frais. Ne sautez pas ces semaines, elles sont cruciales.</em></p>
 
       <!-- Zone photo entraînement -->
-     <img src="Debutant3.png" alt="Course" style="width:100%; height:400px; object-fit:cover; border-radius:18px; margin-top:30px;">
+     <img src="images/Debutant3.png" alt="Course" style="width:100%; height:400px; object-fit:cover; border-radius:18px; margin-top:30px;">
 
     <!-- ====== ÉQUIPEMENT ====== -->
     <section class="content-block alt-block" id="equipement">
@@ -312,45 +312,320 @@
             <li>📱 <strong>Dossard</strong> épinglé correctement (4 épingles)</li>
           </ul>
         </div>
-
+   <!-- EQUIPMENT SECTION -->
+  <section class="equipment-section" id="equipment">
+    <div class="equipment-container">
+      <div class="section-header">
+        <h2>Marathon Equipment Guide</h2>
+        <p>Click on tabs below to see products by level (Beginner, Intermediate, Advanced)</p>
       </div>
-    </section>
 
-  </main>
+      <!-- HYDRATION -->
+      <div class="equipment-category">
+        <h3 class="category-title">Hydration Systems</h3>
+        
+        <div class="tabs-wrapper">
+          <div class="tabs-buttons">
+            <button class="tab-btn active" onclick="switchTab(event, 'hydration-beginner')">Beginner (Entry)</button>
+            <button class="tab-btn" onclick="switchTab(event, 'hydration-intermediate')">Intermediate (Mid-Range)</button>
+            <button class="tab-btn" onclick="switchTab(event, 'hydration-advanced')">Advanced (Premium)</button>
+          </div>
 
-  <section class="contact" id="contact">
-    <div class="contact-inner">
-      <div class="contact-text">
-        <h2>Recevoir ce guide en PDF 📬</h2>
-        <p>Recevez gratuitement ce guide complet Débutant avec tous les tableaux en PDF imprimable.</p>
+          <div id="hydration-beginner" class="tab-content active">
+            <div class="product-card">
+              <div class="product-name">Flasque Running 250ml (Pack of 2)</div>
+              <div class="product-price">€11.90</div>
+              <div class="product-desc">2 Lightweight 500ml bottles with anti-leak valve. Perfect for beginners without constraints. Ideal for 15-20km long runs or first time Marathon runner.</div>
+              <a href="#" class="amazon-btn" rel="nofollow">See on Amazon</a>
+            </div>
+          </div>
+
+          <div id="hydration-intermediate" class="tab-content">
+            <div class="product-card">
+              <div class="product-name">Salomon Soft Flask 500ml</div>
+              <div class="product-price">€27.95</div>
+              <div class="product-desc">Flexible and comfortable flask with high-flow valve and ergonomic grip. Retracts as you drink during the race. Perfect for semi-marathons or marathons without effort.</div>
+              <a href="#" class="amazon-btn" rel="nofollow">See on Amazon</a>
+            </div>
+          </div>
+
+          <div id="hydration-advanced" class="tab-content">
+            <div class="product-card">
+              <div class="product-name">Salomon Hydration Reservoir 1.5L</div>
+              <div class="product-price">€40.00 (Save 13%)</div>
+              <div class="product-desc">Advanced hydration pack with flexible reservoir that retracts as you drink. Short delivery, easy access to water. Sliding handle optimized for running.</div>
+              <a href="#" class="amazon-btn" rel="nofollow">See on Amazon</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <form class="contact-form" onsubmit="handleSubmit(event)">
-        <div class="form-group">
-          <label>Prénom</label>
-          <input type="text" id="prenom" placeholder="Votre prénom" required>
+
+      <!-- ENERGY GELS -->
+      <div class="equipment-category">
+        <h3 class="category-title">Energy Gels & Nutrition</h3>
+        
+        <div class="tabs-wrapper">
+          <div class="tabs-buttons">
+            <button class="tab-btn active" onclick="switchTab(event, 'gels-beginner')">Beginner (Budget)</button>
+            <button class="tab-btn" onclick="switchTab(event, 'gels-intermediate')">Intermediate (Mid-Range)</button>
+            <button class="tab-btn" onclick="switchTab(event, 'gels-advanced')">Advanced (Premium)</button>
+          </div>
+
+          <div id="gels-beginner" class="tab-content active">
+            <div class="product-card">
+              <div class="product-name">SIS Go Isotonic (Box of 6)</div>
+              <div class="product-price">€18.00</div>
+              <div class="product-desc">Isotonic gels without water, simple fruit flavors. Instant energy without stomach issues. Daily training essential.</div>
+              <a href="#" class="amazon-btn" rel="nofollow">See on Amazon</a>
+            </div>
+          </div>
+
+          <div id="gels-intermediate" class="tab-content">
+            <div class="product-card">
+              <div class="product-name">Maurten Gel 100 CAF (Box of 12)</div>
+              <div class="product-price">€39.00</div>
+              <div class="product-desc">Revolutionary hydrogel + caffeine for mental boost. Perfect marathon digestion. Choice of Paris 2026 pros.</div>
+              <a href="#" class="amazon-btn" rel="nofollow">See on Amazon</a>
+            </div>
+          </div>
+
+          <div id="gels-advanced" class="tab-content">
+            <div class="product-card">
+              <div class="product-name">Spring Energy Radical (Box of 14)</div>
+              <div class="product-price">€69.00</div>
+              <div class="product-desc">4 natural carb sources, gourmet taste no syrup. Zero crash at km35. Continuous ultra energy.</div>
+              <a href="#" class="amazon-btn" rel="nofollow">See on Amazon</a>
+            </div>
+          </div>
         </div>
-        <div class="form-group">
-          <label>Adresse email</label>
-          <input type="email" id="email" placeholder="votre@email.com" required>
+      </div>
+
+      <!-- RUNNING SHOES -->
+      <div class="equipment-category">
+        <h3 class="category-title">Running Shoes</h3>
+        
+        <div class="tabs-wrapper">
+          <div class="tabs-buttons">
+            <button class="tab-btn active" onclick="switchTab(event, 'shoes-beginner')">Beginner</button>
+            <button class="tab-btn" onclick="switchTab(event, 'shoes-intermediate')">Intermediate</button>
+            <button class="tab-btn" onclick="switchTab(event, 'shoes-advanced')">Advanced</button>
+          </div>
+
+          <div id="shoes-beginner" class="tab-content active">
+            <div class="product-card">
+              <div class="product-name">Asics Gel-Pulse 15</div>
+              <div class="product-price">€99.00</div>
+              <div class="product-desc">Classic Gel cushioning, durable outsole. Beginner comfort without breaking bank. 500km guaranteed.</div>
+              <a href="#" class="amazon-btn" rel="nofollow">See on Amazon</a>
+            </div>
+          </div>
+
+          <div id="shoes-intermediate" class="tab-content">
+            <div class="product-card">
+              <div class="product-name">Hoka Clifton 9</div>
+              <div class="product-price">€149.00</div>
+              <div class="product-desc">Meta-rocker + ultra-light EVA foam. Natural rolling. Feet intact after Rome 42km.</div>
+              <a href="#" class="amazon-btn" rel="nofollow">See on Amazon</a>
+            </div>
+          </div>
+
+          <div id="shoes-advanced" class="tab-content">
+            <div class="product-card">
+              <div class="product-name">Nike Vaporfly 3</div>
+              <div class="product-price">€259.00</div>
+              <div class="product-desc">Carbon plate + reactive ZoomX foam. -4% marathon time PROVEN. PB guaranteed.</div>
+              <a href="#" class="amazon-btn" rel="nofollow">See on Amazon</a>
+            </div>
+          </div>
         </div>
-        <button type="submit" class="btn-submit">Recevoir mon guide Débutant</button>
-        <p class="form-note" id="form-msg"></p>
-      </form>
+      </div>
+
+      <!-- GPS WATCHES -->
+      <div class="equipment-category">
+        <h3 class="category-title">GPS Watches</h3>
+        
+        <div class="tabs-wrapper">
+          <div class="tabs-buttons">
+            <button class="tab-btn active" onclick="switchTab(event, 'watch-beginner')">Beginner</button>
+            <button class="tab-btn" onclick="switchTab(event, 'watch-intermediate')">Intermediate</button>
+            <button class="tab-btn" onclick="switchTab(event, 'watch-advanced')">Advanced</button>
+          </div>
+
+          <div id="watch-beginner" class="tab-content active">
+            <div class="product-card">
+              <div class="product-name">Amazfit Bip 5</div>
+              <div class="product-price">€89.00</div>
+              <div class="product-desc">Color screen + smartphone notifications. Basic GPS + music. First chrono without 200€ investment.</div>
+              <a href="#" class="amazon-btn" rel="nofollow">See on Amazon</a>
+            </div>
+          </div>
+
+          <div id="watch-intermediate" class="tab-content">
+            <div class="product-card">
+              <div class="product-name">Coros Pace 3</div>
+              <div class="product-price">€229.00</div>
+              <div class="product-desc">Dual GPS + offline maps. Metric precision + Rome navigation without phone.</div>
+              <a href="#" class="amazon-btn" rel="nofollow">See on Amazon</a>
+            </div>
+          </div>
+
+          <div id="watch-advanced" class="tab-content">
+            <div class="product-card">
+              <div class="product-name">Garmin Forerunner 965</div>
+              <div class="product-price">€599.00</div>
+              <div class="product-desc">AMOLED screen + 23 days battery. Pro data + recovery. 24/7 virtual coach.</div>
+              <a href="#" class="amazon-btn" rel="nofollow">See on Amazon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ANTI-CHAFFING -->
+      <div class="equipment-category">
+        <h3 class="category-title">Anti-Chaffing & Care</h3>
+        
+        <div class="tabs-wrapper">
+          <div class="tabs-buttons">
+            <button class="tab-btn active" onclick="switchTab(event, 'care-beginner')">Beginner</button>
+            <button class="tab-btn" onclick="switchTab(event, 'care-intermediate')">Intermediate</button>
+            <button class="tab-btn" onclick="switchTab(event, 'care-advanced')">Advanced</button>
+          </div>
+
+          <div id="care-beginner" class="tab-content active">
+            <div class="product-card">
+              <div class="product-name">Compeed Anti-Blister</div>
+              <div class="product-price">€8.00</div>
+              <div class="product-desc">Hydrocolloid blister patches. Km28 emergency rescue.</div>
+              <a href="#" class="amazon-btn" rel="nofollow">See on Amazon</a>
+            </div>
+          </div>
+
+          <div id="care-intermediate" class="tab-content">
+            <div class="product-card">
+              <div class="product-name">CeraVe Healing Cream</div>
+              <div class="product-price">€15.00</div>
+              <div class="product-desc">Multi-zone repair cream (feet/groin). Prevention + repair. Zero pain next day.</div>
+              <a href="#" class="amazon-btn" rel="nofollow">See on Amazon</a>
+            </div>
+          </div>
+
+          <div id="care-advanced" class="tab-content">
+            <div class="product-card">
+              <div class="product-name">Decathlon Anti-Fatigue Intense</div>
+              <div class="product-price">€29.00</div>
+              <div class="product-desc">12h preventive stick. 42km zero irritation. Skin intact at finish.</div>
+              <a href="#" class="amazon-btn" rel="nofollow">See on Amazon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROTEIN BARS -->
+      <div class="equipment-category">
+        <h3 class="category-title">Protein Bars</h3>
+        
+        <div class="tabs-wrapper">
+          <div class="tabs-buttons">
+            <button class="tab-btn active" onclick="switchTab(event, 'bars-beginner')">Beginner</button>
+            <button class="tab-btn" onclick="switchTab(event, 'bars-intermediate')">Intermediate</button>
+            <button class="tab-btn" onclick="switchTab(event, 'bars-advanced')">Advanced</button>
+          </div>
+
+          <div id="bars-beginner" class="tab-content active">
+            <div class="product-card">
+              <div class="product-name">Aptonia Energy Bar (Box of 10)</div>
+              <div class="product-price">€12.00</div>
+              <div class="product-desc">Simple sustained energy bars. Budget-friendly training fuel.</div>
+              <a href="#" class="amazon-btn" rel="nofollow">See on Amazon</a>
+            </div>
+          </div>
+
+          <div id="bars-intermediate" class="tab-content">
+            <div class="product-card">
+              <div class="product-name">Clif Bar Chocolate Chip (Box of 12)</div>
+              <div class="product-price">€25.00</div>
+              <div class="product-desc">Taste + protein combination. Mid-race recovery favorite.</div>
+              <a href="#" class="amazon-btn" rel="nofollow">See on Amazon</a>
+            </div>
+          </div>
+
+          <div id="bars-advanced" class="tab-content">
+            <div class="product-card">
+              <div class="product-name">Huma Chia Energy Bar (Box of 12)</div>
+              <div class="product-price">€38.00</div>
+              <div class="product-desc">Perfect digestion + electrolytes. No gut issues marathon day.</div>
+              <a href="#" class="amazon-btn" rel="nofollow">See on Amazon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ELECTROLYTES -->
+      <div class="equipment-category">
+        <h3 class="category-title">Electrolytes & Supplements</h3>
+        
+        <div class="tabs-wrapper">
+          <div class="tabs-buttons">
+            <button class="tab-btn active" onclick="switchTab(event, 'elec-beginner')">Beginner</button>
+            <button class="tab-btn" onclick="switchTab(event, 'elec-intermediate')">Intermediate</button>
+            <button class="tab-btn" onclick="switchTab(event, 'elec-advanced')">Advanced</button>
+          </div>
+
+          <div id="elec-beginner" class="tab-content active">
+            <div class="product-card">
+              <div class="product-name">Aptonia Electrolytes (10 sachets)</div>
+              <div class="product-price">€10.00</div>
+              <div class="product-desc">Basic Na/K/Mg. Budget Decathlon option. Quick refill.</div>
+              <a href="#" class="amazon-btn" rel="nofollow">See on Amazon</a>
+            </div>
+          </div>
+
+          <div id="elec-intermediate" class="tab-content">
+            <div class="product-card">
+              <div class="product-name">Tailwind Endurance Fuel 50g</div>
+              <div class="product-price">€25.00</div>
+              <div class="product-desc">Electrolytes + carbs. 1 single product km30+.</div>
+              <a href="#" class="amazon-btn" rel="nofollow">See on Amazon</a>
+            </div>
+          </div>
+
+          <div id="elec-advanced" class="tab-content">
+            <div class="product-card">
+              <div class="product-name">LMNT Recharge (30 sachets)</div>
+              <div class="product-price">€55.00</div>
+              <div class="product-desc">1000mg Na+ zero sugar. Keto-friendly ultra.</div>
+              <a href="#" class="amazon-btn" rel="nofollow">See on Amazon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
-
-  <footer class="footer">
-    <p>🏃 MarathonGuide — Tous droits réservés 2025</p>
-  </footer>
-
   <script>
-    function handleSubmit(e) {
+  
+    function switchTab(e, tabId) {
       e.preventDefault();
-      const prenom = document.getElementById('prenom').value;
-      const msg = document.getElementById('form-msg');
-      msg.textContent = `Merci ${prenom} ! Votre guide Débutant arrive dans votre boîte mail. 🎉`;
-      msg.style.color = '#e8f5e9';
-      e.target.reset();
+      const btn = e.target;
+      const category = btn.closest('.tabs-buttons').parentElement;
+      
+      // Désactiver tous les tabs
+      category.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.remove('active');
+      });
+      
+      category.querySelectorAll('.tab-btn').forEach(button => {
+        button.classList.remove('active');
+      });
+      
+      // Activer le tab sélectionné
+      document.getElementById(tabId).classList.add('active');
+      btn.classList.add('active');
+    }
+
+    function goToLevel(level) {
+      document.getElementById('niveau').value = level;
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
     }
   </script>
 </body>
